@@ -1,46 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/components/search_box.dart';
 import 'package:food_delivery_app/constants.dart';
-import 'package:food_delivery_app/screens/home/components/category_List.dart';
-
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        SearchBox(
-          onChanged: (value) => {},
-        ),
-        CategoryList(),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: <Widget>[
-              ItemCard(
-                imgSrc: 'assets/images/burger2.png',
-                title: 'Burger',
-                shopName: "McDonald's",
-                press: () {},
-              ),
-              ItemCard(
-                imgSrc: 'assets/images/noodles.png',
-                title: 'Noodles',
-                shopName: "Wendys",
-                press: () {},
-              ),
-              ItemCard(
-                imgSrc: 'assets/images/combo.png',
-                title: 'Street Wise',
-                shopName: "KFC",
-                press: () {},
-              ),
-            ],
-          ),
-        )
-      ],
-    );
-  }
-}
 
 class ItemCard extends StatelessWidget {
   final String title, shopName, imgSrc;
@@ -85,6 +44,7 @@ class ItemCard extends StatelessWidget {
                   child: Image.asset(
                     imgSrc,
                     width: size.width * 0.18,
+                    height: size.height * 0.18,
                   ),
                 ),
                 Text(title),

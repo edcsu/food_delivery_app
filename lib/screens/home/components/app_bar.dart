@@ -1,12 +1,12 @@
-
 import 'package:flutter/material.dart';
+// import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/constants.dart';
 
 AppBar homeAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
-      // leading: IconButton(icon: SvgPicture.asset("assets/icons/menu.svg"), onPressed: () => {},)
+      // leading: IconButton(icon: SvgPicture.asset("assets/icons/menu.svg"), onPressed: () {},),
       leading: IconButton(
             icon: Icon(Icons.menu),
             onPressed: () {
