@@ -45,7 +45,6 @@ class ItemCard extends StatelessWidget {
                   child: SvgPicture.asset(
                     svgSrc,
                     width: size.width * 0.18,
-                    height: size.height * 0.18,
                   ),
                 ),
                 Text(title),
