@@ -18,8 +18,8 @@ class ItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(left: 20, right: 15, top: 20, bottom: 20),
-      height: size.height * 0.3,
+      margin: EdgeInsets.only(left: 20, right: 15, top: 10, bottom: 10),
+      height: size.height * 0.27,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
@@ -39,7 +39,7 @@ class ItemCard extends StatelessWidget {
               children: <Widget>[
                 Container(
                   margin: EdgeInsets.only(bottom: 5),
-                  padding: EdgeInsets.all(25),
+                  padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
                       color: kPrimaryColor.withOpacity(0.13),
                       shape: BoxShape.circle),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_delivery_app/constants.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
@@ -8,32 +9,25 @@ class BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 35),
-      height: 50,
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
+    return BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: IconButton(icon: SvgPicture.asset("assets/icons/home.svg"), onPressed: null,),
+            title: Text("Home", style: TextStyle( color: kTextColor),) 
           ),
-        boxShadow: [
-          BoxShadow(
-            offset:  Offset(0, -7),
-            blurRadius: 33,
-            color: Color(0xFF6DAED9).withOpacity(0.11),
+          BottomNavigationBarItem(
+            icon: IconButton(icon: SvgPicture.asset("assets/icons/Following.svg"), onPressed: null,),
+            title: Text("Favorite", style: TextStyle( color: kTextColor)) 
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(icon: SvgPicture.asset("assets/icons/Glyph.svg"), onPressed: null,),
+            title: Text("Locatio", style: TextStyle( color: kTextColor)) 
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(icon: SvgPicture.asset("assets/icons/person.svg"), onPressed: null,),
+            title: Text("Profile", style: TextStyle( color: kTextColor)) 
           )
         ]
-      ),
-      child: Row(
-        children: <Widget> [
-          IconButton(icon: SvgPicture.asset("assets/icons/home.svg"), onPressed: null,),
-          IconButton(icon: SvgPicture.asset("assets/icons/Following.svg"), onPressed: null,),
-          IconButton(icon: SvgPicture.asset("assets/icons/Glyph.svg"), onPressed: null,),
-          IconButton(icon: SvgPicture.asset("assets/icons/person.svg"), onPressed: null,),
-        ]
-      ),
     );
   }
 }

@@ -19,7 +19,7 @@ class DiscountCard extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
             width: double.infinity,
-            height: 112,
+            height: 125,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
