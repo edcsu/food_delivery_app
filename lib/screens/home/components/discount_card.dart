@@ -19,7 +19,7 @@ class DiscountCard extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
             width: double.infinity,
-            height: 166,
+            height: 112,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
@@ -35,16 +35,16 @@ class DiscountCard extends StatelessWidget {
                   ])
                   ),
               child: Padding(
-                padding: const EdgeInsets.all(28.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Row(
                   children: <Widget> [
                     Expanded(child: SvgPicture.asset("assets/icons/macdonalds.svg")),
                     Expanded(child: RichText(text: TextSpan(
                       style: TextStyle(color: Colors.white),
                       children: [
-                        TextSpan(text: "Get Discpunt Of \n" , style: TextStyle(fontSize: 16)),
-                        TextSpan(text: "30% \n" , style: TextStyle(fontSize: 43, fontWeight: FontWeight.bold)),
-                        TextSpan(text: "at MacDonalod's on your first order & Instant cashback" , style: TextStyle(fontSize: 10)),
+                        TextSpan(text: "Get Discpunt Of \n" , style: TextStyle(fontSize: 15)),
+                        TextSpan(text: "30% \n" , style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+                        TextSpan(text: "at MacDonalod's on your first order & Instant cashback" , style: TextStyle(fontSize: 12)),
                       ]
                     ),)),
                   ]

@@ -19,6 +19,7 @@ class ItemCard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.only(left: 20, right: 15, top: 20, bottom: 20),
+      height: size.height * 0.3,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
@@ -37,7 +38,7 @@ class ItemCard extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 5),
                   padding: EdgeInsets.all(25),
                   decoration: BoxDecoration(
                       color: kPrimaryColor.withOpacity(0.13),
