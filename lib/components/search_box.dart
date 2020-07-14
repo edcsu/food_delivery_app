@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app/constants.dart';
 
 class SearchBox extends StatelessWidget {
@@ -19,7 +20,7 @@ class SearchBox extends StatelessWidget {
         onChanged: onChanged,
         decoration: InputDecoration(
           border: InputBorder.none,
-          icon: Icon(Icons.search),
+          icon: SvgPicture.asset("assets/icons/search.svg"),
           hintText: "Search here",
           hintStyle: TextStyle(color: kSecondaryColor),
         ),

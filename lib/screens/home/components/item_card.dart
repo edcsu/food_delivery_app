@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app/constants.dart';
 
 class ItemCard extends StatelessWidget {
-  final String title, shopName, imgSrc;
+  final String title, shopName, svgSrc;
   final Function press;
 
   const ItemCard({
     Key key,
     this.title,
     this.shopName,
-    this.imgSrc,
+    this.svgSrc,
     this.press,
   }) : super(key: key);
 
@@ -41,8 +42,8 @@ class ItemCard extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: kPrimaryColor.withOpacity(0.13),
                       shape: BoxShape.circle),
-                  child: Image.asset(
-                    imgSrc,
+                  child: SvgPicture.asset(
+                    svgSrc,
                     width: size.width * 0.18,
                     height: size.height * 0.18,
                   ),
